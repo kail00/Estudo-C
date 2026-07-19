@@ -37,6 +37,5 @@ printf("Produto mais caro: %d\n", maior_valor );
 printf("Produto mais barato: %d\n", menor_valor);
 printf("Média dos preços: %.2f\n", media);
 
-
     return 0;
 }
