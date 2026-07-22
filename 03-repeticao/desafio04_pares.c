@@ -4,7 +4,7 @@ int main() {
     
     int N, C;
     
-    printf("Informe um numero: ");
+    printf("Mostrar números pares até: ");
     scanf("%d", &N);
      
      C = 1;
