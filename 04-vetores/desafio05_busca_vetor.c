@@ -1,6 +1,8 @@
 #include <stdio.h>
 int main() {
+
 int numero[5], numero_e, achou = 0, posicao = -1;
+
 for (int i = 0; i < 5; i++){
     printf("Digite %d° numero: ", i + 1);
     scanf("%d", &numero[i]);
