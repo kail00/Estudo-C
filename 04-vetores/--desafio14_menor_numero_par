@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main() {
+
+    int numero[8];
+    int menor_par = 0;
+    int achou = 0;
+
+    for(int i = 0; i < 8; i++){
+        printf("Digite um número: ");
+        scanf("%d", &numero[i]);
+    }
+
+    for(int i = 0; i < 8; i++){
+
+        if(numero[i] % 2 == 0){
+
+            if(achou == 0){
+                menor_par = numero[i];
+                achou = 1;
+            }
+            else if(numero[i] < menor_par){
+                menor_par = numero[i];
+            }
+
+        }
+    }
+
+    if(achou == 1){
+        printf("\nMenor número par: %d\n", menor_par);
+    }
+    else{
+        printf("\nNão existe número par no vetor.\n");
+    }
+
+    return 0;
+}
