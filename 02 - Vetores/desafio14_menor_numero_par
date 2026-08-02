@@ -2,9 +2,9 @@
 
 int main() {
 
-    int numero[8];
-    int menor_par = 0;
-    int achou = 0;
+int numero[8];
+int menor_par = 0;
+int achar_primeiro_numero = 0;
 
     for(int i = 0; i < 8; i++){
         printf("Digite um número: ");
@@ -15,9 +15,9 @@ int main() {
 
         if(numero[i] % 2 == 0){
 
-            if(achou == 0){
+            if(achar_primeiro_numero == 0){
                 menor_par = numero[i];
-                achou = 1;
+                achar_primeiro_numero = 1;
             }
             else if(numero[i] < menor_par){
                 menor_par = numero[i];
@@ -26,7 +26,7 @@ int main() {
         }
     }
 
-    if(achou == 1){
+    if(achar_primeiro_numero == 1){
         printf("\nMenor número par: %d\n", menor_par);
     }
     else{
